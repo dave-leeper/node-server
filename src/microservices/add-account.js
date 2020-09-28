@@ -20,8 +20,11 @@ class AddAccount {
   do(reqInfo) {
     return new Promise((inResolve, inReject) => {
       const { body } = reqInfo;
+      console.log(`--------------> 1 ${JSON.stringify(body)}`);
       const accounts = Registry.get('Accounts');
+      console.log(`--------------> 2 ${JSON.stringify(accounts)}`);
       const newAccount = this.buildAccount(body);
+      console.log(`--------------> 3 ${JSON.stringify(newAccount)}`);
       const validateResult = this.validate(body, newAccount, accounts);
       if (validateResult.status !== 200) {
         if (Log.will(Log.ERROR)) Log.error(validateResult.send);
@@ -33,8 +36,10 @@ class AddAccount {
         return;
       }
 
+      console.log('--------------> 4');
       const updateResult = this.updateAccounts(newAccount, accounts, inResolve, inReject);
       if (updateResult.status) {
+        console.log('--------------> 5');
         AddAccount.rememberUser(reqInfo, newAccount.username);
         this.writeAccount(newAccount, AddAccount.authenticationFile, updateResult.accounts, inResolve, inReject);
       }
