@@ -1,0 +1,25 @@
+{
+  "id": "hell_rider",
+  "title": "Hell Rider",
+  "issue": 2,
+  "width": 2550,
+  "height": 3300,
+  "pages": [
+    "Page_01.jpg",
+    "Page_02.jpg",
+    "Page_03.jpg",
+    "Page_04.jpg",
+    "Page_05.jpg",
+    "Page_06.jpg",
+    "Page_07.jpg",
+    "Page_08.jpg",
+    "Page_09.jpg",
+    "Page_10.jpg"
+  ],
+  "cover": "Page_01.jpg",
+  "preview": [
+    "Page_02.jpg",
+    "Page_03.jpg",
+    "Page_04.jpg"
+  ]
+}

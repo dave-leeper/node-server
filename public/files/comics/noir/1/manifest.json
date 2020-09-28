@@ -1,0 +1,14 @@
+{
+  "id": "noir",
+  "title": "Noir",
+  "issue": 1,
+  "width": 2550,
+  "height": 3300,
+  "pages": [
+    "Page_01.png"
+  ],
+  "cover": "Page_01.png",
+  "preview": [
+    "Page_01.png"
+  ]
+}

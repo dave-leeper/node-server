@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+  <title>CodeMirror</title>
+  <meta charset="utf-8"/>
+  <link rel=stylesheet href="lib/codemirror.css">
+  <link rel=stylesheet href="theme/blackboard.css">
+  <script src="lib/codemirror.js"></script>
+  <script src="mode/xml/xml.js"></script>
+  <script src="mode/javascript/javascript.js"></script>
+  <script src="mode/css/css.js"></script>
+  <script src="mode/htmlmixed/htmlmixed.js"></script>
+  <script src="addon/edit/matchbrackets.js"></script>
+  <style>
+    .CodeMirror { height: auto; border: 1px solid #ddd; }
+    .CodeMirror-scroll { max-height: 100%; }
+  </style>
+</head>
+<body style="padding:5px;">
+  <section id=demo>
+    <h2>This is CodeMirror</h2>
+    <form style="position: relative;">
+        <textarea id=demotext>
+<!-- Create a simple CodeMirror instance -->
+<link rel="stylesheet" href="lib/codemirror.css">
+<script src="lib/codemirror.js"></script>
+<script>
+  var editor = CodeMirror.fromTextArea(myTextarea, {
+    lineNumbers: true
+  });
+</script></textarea>
+    </form>
+    <script>
+      var editor = CodeMirror.fromTextArea(document.getElementById("demotext"), {
+        lineNumbers: true,
+        mode: "text/html",
+        matchBrackets: true,
+        theme: "blackboard"
+      });
+    </script>
+  </section>
+</body>
+</html>
+

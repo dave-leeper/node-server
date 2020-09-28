@@ -1,0 +1,17 @@
+{
+  "id": "whisper_witch_the_defects_of_god",
+  "title": "Whisper Witch: The Defects of God",
+  "issue": 2,
+  "width": 2550,
+  "height": 3300,
+  "pages": [
+    "Page_1.jpg",
+    "Page_2.jpg",
+    "Page_3.jpg"
+  ],
+  "cover": "Page_01.jpg",
+  "preview": [
+    "Page_2.jpg",
+    "Page_3.jpg"
+  ]
+}

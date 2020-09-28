@@ -1,0 +1,57 @@
+{
+  "accounts": [
+    {
+      "username": "dave",
+      "password": "83e0dcf2bd63f8a7f080aaffc823e35b",
+      "groups": [
+        "admin"
+      ],
+      "token": "0b851455-c80a-48d3-adb0-5f1807b20431",
+      "lastAccessTime": "2019-11-26T12:06:50.232Z",
+      "email": "magicjtv@gmail.com",
+      "firstName": "David",
+      "lastName": "Leeper",
+      "transactionDate": "2018-11-21"
+    },
+    {
+      "username": "admin",
+      "password": "2a7d9a2ece07736802dd18721d01d752",
+      "groups": [
+        "user",
+        "admin"
+      ],
+      "email": "admin@admin.com",
+      "transactionDate": "2019-12-1"
+    },
+    {
+      "username": "username",
+      "password": "6ae535f16325d62349eeaa53d1c259f6",
+      "groups": [
+        "user"
+      ],
+      "headers": [
+        {
+          "header": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "cookies": [
+        {
+          "name": "MY_COOKIE1",
+          "value": "MY_COOKIE_VALUE1"
+        },
+        {
+          "name": "MY_COOKIE2",
+          "value": "MY_COOKIE_VALUE2",
+          "expires": 9999
+        },
+        {
+          "name": "MY_COOKIE3",
+          "value": "MY_COOKIE_VALUE3",
+          "maxAge": 9999
+        }
+      ],
+      "transactionDate": "2018-11-21"
+    }
+  ]
+}

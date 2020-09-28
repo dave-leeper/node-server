@@ -1,0 +1,17 @@
+{
+  "id": "store_front",
+  "defaultDuration": 10000.0,
+  "width": 393,
+  "height": 249,
+  "slides": [
+    { "image": "Slideshow1.png", "title": "Captain Æther", "id": "whisper_witch", "issue": 1, "description": "Stream Punk meets Æther Punk in wild adventures from the 1860s." },
+    { "image": "Slideshow2.png", "title": "Gold Venus", "id": "gold_venus", "issue": 1, "description": "Gold Venus battles the Axis Powers in the Pacific during World War II." },
+    { "image": "Slideshow3.png", "title": "Legends Pacific", "id": "legends_pacific", "issue": 1, "description": "Gold Venus, Trick Arrow, Man O' Metal, Dreamtime, Ying Yang, the Shark, and Dr. Frost vs. the Japanese forces in the 1940s." },
+    { "image": "Slideshow4.png", "title": "Legends Europe", "id": "legends_europe", "issue": 1, "description": "The Flag, Miss Muscles, the Heap, Fireworks, the Wraith, Whisper Witch, and the Silver Streak vs. the Nazis in the 1940s." },
+    { "image": "Slideshow5.png", "title": "Whisper Witch", "id": "whisper_witch", "issue": 1, "description": "A young Erin O'Hara begins to discover the secrets of reality. Guest starring Isaac Newton." },
+    { "image": "Slideshow6.png", "title": "Black Fury and Kid Fury", "id": "gold_venus", "issue": 1, "description": "Detective John Perry searches for his partner's murderer while taking care of his orphaned daughter." },
+    { "image": "Slideshow7.png", "title": "Wild Boy", "id": "legends_pacific", "issue": 1, "description": "Wild Boy, Lord of the Dinosaurs, battles witch doctors, snake people, and even his friends." },
+    { "image": "Slideshow8.png", "title": "The Super-Agents", "id": "legends_europe", "issue": 1, "description": "The Swinging '60s get super-powered with Atoman, Strongman, Undercover Girl, and Robot Girl." },
+    { "image": "Slideshow9.png", "title": "Heroes of the Wild Frontier", "id": "heroes_of_the_wild_frontier", "issue": 1, "description": "Captain Æther, Steam Train, Straight Arrow, Luana Jones, Stella Obscura, Knur, Ghost Slinger, Father Stewart, and Dreamcatcher." }
+  ]
+}

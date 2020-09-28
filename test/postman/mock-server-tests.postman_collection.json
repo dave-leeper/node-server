@@ -1,0 +1,306 @@
+{
+	"info": {
+		"name": "node-server-tests",
+		"_postman_id": "30a09abb-e430-b42e-9b2d-69a0db6d5588",
+		"description": "Node server tests.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "elasticsearch connection connect",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ff37fa73-58af-4513-99e0-a4a3fb563780",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"elasticsearch connection test\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var expectedResponse = {",
+							"        databaseConnection: \"elasticsearch\",",
+							"        operation: \"connect\",",
+							"        isConnected: true",
+							"    };",
+							"    pm.expect(jsonData).to.eql(expectedResponse);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{protocol}}://{{server}}:{{port}}/elasticsearch/database/connect",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"elasticsearch",
+						"database",
+						"connect"
+					]
+				},
+				"description": "Connects to an elasticsearch database"
+			},
+			"response": []
+		},
+		{
+			"name": "elasticsearch connection ping",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "cd65931c-e780-4de5-8df7-06d700b7b46c",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"elasticsearch ping test\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var expectedResponse = {",
+							"        databaseConnection: \"elasticsearch\",",
+							"        operation: \"ping\",",
+							"        isConnected: true",
+							"    };",
+							"    pm.expect(jsonData).to.eql(expectedResponse);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{protocol}}://{{server}}:{{port}}/elasticsearch/database/ping",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"elasticsearch",
+						"database",
+						"ping"
+					]
+				},
+				"description": "Pings an elasticsearch database."
+			},
+			"response": []
+		},
+		{
+			"name": "elasticsearch connection disconnect",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "72440c9d-bedb-4663-9aac-68e6606ab87f",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"elasticsearch disconnect test\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var expectedResponse = {",
+							"        databaseConnection: \"elasticsearch\",",
+							"        operation: \"disconnect\",",
+							"        isConnected: false",
+							"    };",
+							"    pm.expect(jsonData).to.eql(expectedResponse);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{protocol}}://{{server}}:{{port}}/elasticsearch/database/disconnect",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"elasticsearch",
+						"database",
+						"disconnect"
+					]
+				},
+				"description": "Disconnects from an elasticsearch database."
+			},
+			"response": []
+		},
+		{
+			"name": "elasticsearch index create",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "482850d0-6f4c-4fd2-8986-b5bda5bd2520",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Your test name\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var expectedResult = {status:\"success\",operation:\"Create table test\"};",
+							"    pm.expect(jsonData).to.eql(expectedResult);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "filename",
+							"description": "",
+							"type": "file",
+							"src": "sample-elasticsearch-schema.json"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{protocol}}://{{server}}:{{port}}/elasticsearch/index",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"elasticsearch",
+						"index"
+					]
+				},
+				"description": "creates an elasticsearch table."
+			},
+			"response": []
+		},
+		{
+			"name": "elasticsearch index drop",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1f2177cf-2ade-4cc1-9dd8-b82d55f496b4",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Your test name\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var expectedResponse = {",
+							"        table: \"test\",",
+							"        dropped: true",
+							"    };",
+							"    pm.expect(jsonData).to.eql(expectedResponse);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{protocol}}://{{server}}:{{port}}/elasticsearch/index/test",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"elasticsearch",
+						"index",
+						"test"
+					]
+				},
+				"description": "Drops an index from an elasticsearch database."
+			},
+			"response": []
+		},
+		{
+			"name": "elasticsearch index exists",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2138bf66-5181-4da0-aebd-ed5613161d0c",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Your test name\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var expectedResult = {",
+							"        table: \"test\",",
+							"        exists: true",
+							"    };",
+							"    pm.expect(jsonData).to.eql(expectedResult);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{protocol}}://{{server}}:{{port}}/elasticsearch/index/test/exists",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"elasticsearch",
+						"index",
+						"test",
+						"exists"
+					]
+				},
+				"description": "Pings an elasticsearch table."
+			},
+			"response": []
+		},
+		{
+			"name": "elasticsearch index mapping create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "filename",
+							"description": "",
+							"type": "file",
+							"src": "sample-elasticsearch-schema.json"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{protocol}}://{{server}}:{{port}}//elasticsearch/index/mapping",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"",
+						"elasticsearch",
+						"index",
+						"mapping"
+					]
+				},
+				"description": "Creates a mapping for an elasticsearch index."
+			},
+			"response": []
+		}
+	]
+}

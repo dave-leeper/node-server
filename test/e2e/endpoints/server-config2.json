@@ -1,0 +1,9 @@
+{
+  "statics": [
+    {
+      "path": "/ping",
+      "response": {"name":"My Server","version":"2.0"},
+      "responseType": "JSON"
+    }
+  ]
+}

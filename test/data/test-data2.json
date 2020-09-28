@@ -1,0 +1,6 @@
+{
+  "path": "/ping",
+  "response": {"name":"My Server","version":"1.0"},
+  "responseType": "JSON",
+  "headers": [ { "header": "MY_HEADER", "value": "MY_HEADER_VALUE" } ]
+}

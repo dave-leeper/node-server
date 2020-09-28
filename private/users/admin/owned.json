@@ -1,0 +1,112 @@
+[
+   {
+      "id": "legends_pacific",
+      "issue": 1,
+      "transactionDate": "2019-01-01"
+   },
+   {
+      "id": "legends_pacific",
+      "issue": 2,
+      "transactionDate": "2019-01-01"
+   },
+   {
+      "id": "legends_pacific",
+      "issue": 3,
+      "transactionDate": "2019-01-01"
+   },
+   {
+      "id": "legends_pacific",
+      "issue": 4,
+      "transactionDate": "2019-01-01"
+   },
+   {
+      "id": "whisper_witch",
+      "issue": 1,
+      "transactionDate": "2019-06-21"
+   },
+   {
+      "id": "whisper_witch",
+      "issue": 2,
+      "transactionDate": "2019-06-21"
+   },
+   {
+      "id": "whisper_witch",
+      "issue": 3,
+      "transactionDate": "2019-06-21"
+   },
+   {
+      "id": "whisper_witch",
+      "issue": 4,
+      "transactionDate": "2019-06-21"
+   },
+   {
+      "id": "legends_europe",
+      "issue": 1,
+      "transactionDate": "2019-11-21"
+   },
+   {
+      "id": "legends_europe",
+      "issue": 2,
+      "transactionDate": "2019-11-21"
+   },
+   {
+      "id": "legends_europe",
+      "issue": 3,
+      "transactionDate": "2019-11-21"
+   },
+   {
+      "id": "legends_europe",
+      "issue": 4,
+      "transactionDate": "2019-11-21"
+   },
+   {
+      "id": "heroes_of_the_wild_frontier",
+      "issue": 1,
+      "transactionDate": "2019-11-21"
+   },
+   {
+      "id": "heroes_of_the_wild_frontier",
+      "issue": 2,
+      "transactionDate": "2019-11-21"
+   },
+   {
+      "id": "heroes_of_the_wild_frontier",
+      "issue": 3,
+      "transactionDate": "2019-11-21"
+   },
+   {
+      "id": "heroes_of_the_wild_frontier",
+      "issue": 4,
+      "transactionDate": "2019-11-21"
+   },
+   {
+      "id": "hell_rider",
+      "issue": 1,
+      "transactionDate": "2019-11-30"
+   },
+   {
+      "id": "babe_1",
+      "issue": 1,
+      "transactionDate": "2019-11-30"
+   },
+   {
+      "id": "gold_venus",
+      "issue": 4,
+      "transactionDate": "2019-11-30"
+   },
+   {
+      "id": "gold_venus",
+      "issue": 3,
+      "transactionDate": "2019-11-30"
+   },
+   {
+      "id": "gold_venus",
+      "issue": 2,
+      "transactionDate": "2019-11-30"
+   },
+   {
+      "id": "gold_venus",
+      "issue": 1,
+      "transactionDate": "2019-11-30"
+   }
+]

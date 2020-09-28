@@ -1,0 +1,10 @@
+{
+  "data":{
+    "title": "updated title",
+    "content": "updated content",
+    "suggest": "updated suggest"
+  },
+  "id": 3,
+  "type": "my-type",
+  "index": "test"
+}

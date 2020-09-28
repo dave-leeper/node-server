@@ -1,0 +1,15 @@
+{
+  "index": "test",
+  "type": "document",
+  "body": {
+    "properties": {
+      "title": { "type": "text" },
+      "content": { "type": "text" },
+      "suggest": {
+        "type": "completion",
+        "analyzer": "simple",
+        "search_analyzer": "simple"
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "users": [
+    {
+      "name": "Johnmatze",
+      "id": "55df49659d2ed684adaf532cdb002d9c",
+      "username": "Johnmatze",
+      "bio": "This is a test bio",
+      "profilePhoto": "84a60910-00d7-4646-9a67-b2f492754856",
+      "coverPhoto": "a84a4ce8-9e73-4899-a07f-70fe5e62ae0b",
+      "verified": true
+    },
+    {
+      "name": "Johnmatze+10",
+      "id": "0ab9c9ff1df5e63a3660525d3f0043d7",
+      "username": "Johnmatze+10",
+      "verified": true
+    },
+    {
+      "name": "John Matze+15",
+      "id": "0ab9c9ff1df5e63a3660525d3f008a8f",
+      "username": "Johnmatze15",
+      "profilePhoto": "373acd85-421c-4ac3-86ef-17bdbb7d352a",
+      "verified": true,
+      "followed": true
+    }
+  ]
+}

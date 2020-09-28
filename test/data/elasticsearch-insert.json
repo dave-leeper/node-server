@@ -1,0 +1,10 @@
+{
+  "data":{
+    "title": "my title",
+    "content": "my content",
+    "suggest": "my suggest"
+  },
+  "id": 1,
+  "type": "document",
+  "index": "test"
+}

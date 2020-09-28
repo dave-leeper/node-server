@@ -1,0 +1,47 @@
+{
+  "notifications":[
+    {
+      "_id":"32886c16d5281815ce5e83e1c152e1f0",
+      "_rev":"1-e2cd32a743ee4141ff3b7f5ad6225bd5",
+      "newPostId":"32886c16d5281815ce5e83e1c152de26",
+      "postCreationDate":"20180323233139",
+      "body":"Jacktherius Taktheratrix echoed your post from 5 days ago",
+      "createdAt":"20180329164312",
+      "targetUserId":"c60a494e9ecb0e04d4fbfc86f1066ade",
+      "title":"Echoed Post",
+      "userFullName":"Jacktherius Taktheratrix",
+      "type":[
+        "notification",
+        "repost"
+      ]
+    },
+    {
+      "_id":"32886c16d5281815ce5e83e1c152d4c1",
+      "_rev":"1-b122cdb5e0dda89fec545dc93536ffcc",
+      "isPrivate":false,
+      "body":"Davidkleeper is now following you",
+      "createdAt":"20180329164301",
+      "targetUserId":"c60a494e9ecb0e04d4fbfc86f1066ade",
+      "title":"New Follower",
+      "userFullName":"Davidkleeper",
+      "userId":"c60a494e9ecb0e04d4fbfc86f101d586",
+      "type":[
+        "notification",
+        "followed"
+      ]
+    }
+  ],
+  "users":[
+    {
+      "bio":"The Bear Jew",
+      "coverPhoto":"28076380-a904-4bb7-bd47-cedb129d4d4f",
+      "id":"c60a494e9ecb0e04d4fbfc86f101d586",
+      "name":"Jacktherius Tacktheratrix",
+      "private":false,
+      "profilePhoto":"9ffa745b-d3f7-46a4-94f9-26abff33a920",
+      "username":"BPeretzz1",
+      "verified":true
+    }
+  ]
+}
+
