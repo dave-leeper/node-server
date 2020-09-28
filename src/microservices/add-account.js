@@ -94,8 +94,6 @@ class AddAccount {
   }
 
   updateAccounts(newAccount, accounts, inResolve, inReject) {
-    const crypto = Registry.get('Crypto');
-    const encryptedAccount = Encrypt.encryptAccount(newAccount, crypto.iv, crypto.key);
     if (accounts && accounts.length) {
       for (let i = accounts.length - 1; i >= 0; i--) {
         if (newAccount.username.toUpperCase() === accounts[i].username.toUpperCase()) {
@@ -105,26 +103,25 @@ class AddAccount {
           return { status: false };
         }
       }
-      accounts.push(encryptedAccount);
+      accounts.push(newAccount);
     } else {
-      accounts = [encryptedAccount];
+      accounts = [newAccount];
     }
     return { status: true, accounts };
   }
 
   writeAccount(newAccount, authenticationFile, accounts, inResolve, inReject) {
     const newUserPath = path.resolve(AddAccount.userPath + newAccount.username);
-    Files.createDirSync(newUserPath);
-    Files.writeFileSync(`${newUserPath}/owned.json`, '[]');
-    Files.writeFileSync(`${newUserPath}/favorites.json`, '[]');
-    Files.writeFileSync(`${newUserPath}/cart.json`, '[]');
-    Files.writeFileSync(`${newUserPath}/hero-base.json`, '[]');
 
     const successCallback = () => {
       const message = I18n.get(Strings.SUCCESS_MESSAGE_ACCOUNT_ADDED);
+      Files.createDirSync(newUserPath);
+      Files.writeFileSync(`${newUserPath}/owned.json`, '[]');
+      Files.writeFileSync(`${newUserPath}/favorites.json`, '[]');
+      Files.writeFileSync(`${newUserPath}/cart.json`, '[]');
+      Files.writeFileSync(`${newUserPath}/hero-base.json`, '[]');
       Registry.unregister('Accounts');
-      const decryptedAccounts = Encrypt.decryptAccounts(accounts);
-      Registry.register(decryptedAccounts, 'Accounts');
+      Registry.register(accounts, 'Accounts');
       inResolve && inResolve({ status: 200, send: message });
     };
     const failCallback = (error) => {
@@ -132,9 +129,11 @@ class AddAccount {
       if (Log.will(Log.ERROR)) Log.error(message);
       inReject && inReject({ status: 500, send: message });
     };
+    const crypto = Registry.get('Crypto');
+    const encryptedAccounts = Encrypt.encryptAccounts(accounts, crypto.iv, crypto.key);
     Files.writeFileLock(
       path.resolve(authenticationFile),
-      JSON.stringify({ accounts }, null, 3),
+      JSON.stringify({ accounts: encryptedAccounts }, null, 3),
       5,
       successCallback,
       failCallback,

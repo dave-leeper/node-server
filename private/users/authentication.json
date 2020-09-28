@@ -1,17 +1,4 @@
 {
    "accounts": [
-      {
-         "username": "fffff",
-         "password": "0eb6d3666d6b70cf2d72f5bdfaf717d9",
-         "groups": [
-            "user"
-         ],
-         "email": "magicjtv@gmail.com",
-         "firstName": "foo",
-         "lastName": "bar",
-         "transactionDate": "2020-9-27",
-         "resetPasswordToken": "9ed6f5a5-72dc-4ddd-ad63-c8558a59a651",
-         "resetPasswordExpires": 1601273873795
-      }
    ]
 }
