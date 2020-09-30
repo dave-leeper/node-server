@@ -8,7 +8,7 @@ class AuthenticateUser {
     return new Promise((inResolve, inReject) => {
       console.log('AuthenticateUser');
       const message = Strings.format(I18n.get(Strings.LOGIN_SUCCESSFUL), reqInfo.params.username);
-      this.doRemember(reqInfo, reqInfo.body.username);
+      // this.doRemember(reqInfo, reqInfo.body.username);
       if (Log.will(Log.INFO)) Log.info(message);
       inResolve && inResolve({ status: 200, send: message });
     });
