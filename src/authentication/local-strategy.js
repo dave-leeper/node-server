@@ -18,8 +18,10 @@ const WWW_AUTHENTICATE_HEADER = 'Node-Server realm="User Visible Realm", charset
 class LocalStrategy {
   getAuthentication() {
     return new PassportLocalStrategy((username, password, done) => {
+      console.log(`--------------> LocalStrategy 0 ${username} ${password}`);
       const operation = 'getAuthentication';
       const accounts = Registry.get('Accounts');
+      console.log(`--------------> LocalStrategy 1 ${JSON.stringify(accounts)}`);
       if (!username || !password || !done) {
         const err = {
           operation, statusType: 'error', status: 401, message: I18n.get(Strings.ERROR_MESSAGE_LOGIN_REQUIRED),
