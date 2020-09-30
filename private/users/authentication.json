@@ -1,4 +1,13 @@
 {
    "accounts": [
+      {
+         "username": "testy3",
+         "password": "6ae535f16325d62349eeaa53d1c259f6",
+         "groups": [
+            "user"
+         ],
+         "email": "ggg@eee.lll",
+         "transactionDate": "2020-9-30"
+      }
    ]
 }

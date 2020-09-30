@@ -19,6 +19,7 @@ class AddAccount {
 
   do(reqInfo) {
     return new Promise((inResolve, inReject) => {
+      console.log(`--------------> 0 ${JSON.stringify(reqInfo)}`);
       const { body } = reqInfo;
       console.log(`--------------> 1 ${JSON.stringify(body)}`);
       const accounts = Registry.get('Accounts');
