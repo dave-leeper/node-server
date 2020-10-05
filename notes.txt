@@ -1,12 +1,30 @@
-### GitHub
-Client ID c710a4
-Client ID e843af
-Client ID 74a245
-Client ID 5b
-Client Secret d391af
-Client Secret cab14d
-Client Secret b918ee
-Client Secret 41067c
-Client Secret dd7770
-Client Secret 07dda8
-Client Secret 9274
+67 extra slots
+
+Level   Slots
+3       2
+5       2
+7       2
+9       2
+11      2
+13      2
+15      2
+17      2
+19      2
+21      2
+23      2
+25      2
+27      2
+29      2
+31      3
+33      3
+34      3
+36      3
+37      3
+39      3
+40      3
+42      3
+43      3
+45      3
+46      3
+48      3
+50      3
